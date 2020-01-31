@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans&display=swap');
+
+:root {
+  --main-font: 'Open Sans', sans-serif;
+  --title-font: 'Fjalla One', sans-serif;;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  min-height: 100vh;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-areas:  
+  "header header"
+  "aside section"
+  "footer footer"
+  ;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-columns: 300px 1fr;
+
+}
+
+header{
+  grid-area: header;
+  font-family: var(--title-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside{
+  grid-area: aside;
+  background-color: whitesmoke;
+}
+
+.project-holder{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 5px 10px;
+}
+
+.project{
+  width: 100%;
+  text-align: center;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: white;
+}
+
+section{
+  grid-area: section;
+  background-color: blue;
+}
+
+footer{
+  grid-area: footer;
+  background-color: yellow;
+}
