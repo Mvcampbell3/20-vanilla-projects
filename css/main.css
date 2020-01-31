@@ -2,7 +2,8 @@
 
 :root {
   --main-font: 'Open Sans', sans-serif;
-  --title-font: 'Fjalla One', sans-serif;;
+  --title-font: 'Fjalla One', sans-serif;
+  --bg-blue: rgb(43, 36, 59);
 }
 
 *{
@@ -28,7 +29,7 @@ body{
   ;
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 100px 1fr 100px;
+  grid-template-rows: 100px 1fr 60px;
   grid-template-columns: 300px 1fr;
 
 }
@@ -39,11 +40,23 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg-blue);
+  color: white;
 }
 
 aside{
   grid-area: aside;
-  background-color: whitesmoke;
+  background-color: #ccc;
+  padding: 10px 0px;
+  overflow-y: auto;
+}
+
+.aside-title{
+  font-family: var(--title-font);
+  color: black;
+  text-decoration: underline;
+  letter-spacing: 1.2px;
+  padding: 1em 0;
 }
 
 .project-holder{
@@ -54,21 +67,90 @@ aside{
 }
 
 .project{
-  width: 100%;
+  width: fit-content;
+  margin: 0 auto;
   text-align: center;
   border: 1px black solid;
   border-radius: 5px;
-  padding: 5px;
+  padding: .5em 1em;
   font-size: 20px;
   background-color: white;
+  cursor: pointer;
+  font-family: var(--main-font);
+}
+
+.project.active{
+  background-color: var(--bg-blue);
+  color: white;
+  box-shadow: 1px 1px 5px rgba(51, 51, 51, 0.349);
+  transform: scale(1.03);
 }
 
 section{
   grid-area: section;
-  background-color: blue;
+  /* padding: 5em 0 0 0; */
+  background: url('/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center center;
+}
+
+section img{
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: auto;
+  display: block;
+}
+
+.wrapper{
+  padding: 2em 1em;
+  background-color: rgba(255, 255, 255, 0.973);
+  border-radius: 10px;
+  max-width: 40%;
+  min-width: 300px;
+  margin-top: -5vh;
+}
+
+.project-info{
+  padding: 5px;
+}
+
+.project-name-section{
+  font-family: var(--title-font);
+}
+
+.project-link-section{
+  display: block;
+  color: black;
+  font-family: var(--main-font);
+}
+
+.project-description-section{
+  font-size: 18px;
+  font-family: var(--main-font);
 }
 
 footer{
   grid-area: footer;
-  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding: 0px 50px;
+  background-color: var(--bg-blue);
+}
+
+footer .side{
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .side a, h5{
+  color: white;
+  font-family: var(--main-font);
+  padding: 5px;
 }
