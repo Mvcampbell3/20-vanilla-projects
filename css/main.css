@@ -3,7 +3,7 @@
 :root {
   --main-font: 'Open Sans', sans-serif;
   --title-font: 'Fjalla One', sans-serif;
-  --bg-blue: rgb(43, 36, 59);
+  --bg-blue: rgb(6, 85, 138);
 }
 
 *{
@@ -30,7 +30,7 @@ body{
   width: 100vw;
   height: 100vh;
   grid-template-rows: 60px 1fr 60px;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 220px 1fr;
 
 }
 
@@ -72,8 +72,8 @@ aside{
   text-align: center;
   border: 1px black solid;
   border-radius: 5px;
-  padding: .5em 1em;
-  font-size: 20px;
+  padding: .25em .5em;
+  font-size: 14px;
   background-color: white;
   cursor: pointer;
   font-family: var(--main-font);
@@ -88,9 +88,7 @@ aside{
 
 section{
   grid-area: section;
-  background: url('/images/bg.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: #111;
   display: grid;
   place-items: center center;
 }
@@ -146,10 +144,17 @@ footer .side{
   width: fit-content;
   margin: 0 auto;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.103);
+  padding: 3px;
+  border-radius: 3px;
 }
 
 footer .side a, h5{
   color: white;
   font-family: var(--main-font);
   padding: 5px;
+}
+
+footer .side a{
+  font-size: 12px;
 }
