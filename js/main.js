@@ -16,6 +16,12 @@ const projects = [
     link:'/movieBooking.html',
     description: 'Using localStorage, we set up a movie seat picking app which saves the seats and movie you selected.',
     img_url: './images/movieBooking.png'
+  },
+  {
+    name: 'Custom Movie Player',
+    link: '/moviePlayer.html',
+    description: 'Adds custom controls for play/pause/stop buttons, progess bar, and timestamp using CSS, JS, and the Video API.',
+    img_url: './images/movieViewer.png'
   }
 ]
 
