@@ -10,6 +10,12 @@ const projects = [
     link: '/formValidator.html',
     description: 'This is the form validator project that kicked off the course. Uses great CSS and JS interaction for being able to control form-validation on the front end',
     img_url: './images/formValidator.png'
+  },
+  {
+    name: 'Movie Booking',
+    link:'/movieBooking.html',
+    description: 'Using localStorage, we set up a movie seat picking app which saves the seats and movie you selected.',
+    img_url: './images/movieBooking.png'
   }
 ]
 
