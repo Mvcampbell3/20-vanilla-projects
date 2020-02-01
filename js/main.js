@@ -22,6 +22,12 @@ const projects = [
     link: '/moviePlayer.html',
     description: 'Adds custom controls for play/pause/stop buttons, progess bar, and timestamp using CSS, JS, and the Video API.',
     img_url: './images/movieViewer.png'
+  },
+  {
+    name: 'Exchange Rate Calculator',
+    link: '/exchangeRate.html',
+    description: 'Uses the ExchangeRate-API to calculate the exchanges between many different currencies',
+    img_url: './images/exchangeRate.png'
   }
 ]
 
